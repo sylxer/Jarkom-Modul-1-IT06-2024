@@ -12,7 +12,7 @@
 
 3. Jawab seluruh pertanyaan yang terdapat pada netcat.
 
-// gambar nc
+![fuzz](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/73250327-ebbf-42d9-bdf8-0edcf4075d11)
 
 ## Whoami
 
@@ -26,7 +26,7 @@
 
 3. Jawab pertanyaan pada netcat.
 
-// gambar nc
+![whoami](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/db29e5a3-6397-40bf-8174-24776c4fbcdd)
 
 ## ATM or ATP or FTP?
 
@@ -36,7 +36,7 @@
 
 2. Jawab pertanyaan pada netcat.
 
-// gambar nc
+![atm](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/629acb4a-e6b2-4756-8d0c-f88ec60c18c1)
 
 ## Trace Him
 
@@ -46,7 +46,7 @@
 
 2. Jawab pertanyaan pada netcat.
 
-// gambar nc
+![trace him](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/4b84f36f-8ccf-4682-8a33-4dc8c8fd31ac)
 
 ## Evidence
 
@@ -60,4 +60,4 @@
 
 3. Jawab pertanyaan pada netcat.
 
-// gambar
+![evidence](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/8ba85db8-a860-4a05-a783-85019d934938)
