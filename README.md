@@ -69,34 +69,45 @@
 ![evidence](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/8ba85db8-a860-4a05-a783-85019d934938)
 
 ## Creds
-1. Membuka file evidence.pcap di wireshark. Lakukan filter pada kolom yaitu (ftp contains "Login successful")
-2. lalu klik kanan -> follow -> TCP stream pada paket no 125
-3. Dibawah ini adalah username dan password yang berhasil melakukan login.
-4. Didapatkan flag dengan memasukan jawabannya sesuai format yang diminta (USER:h3ngk3rTzy) (PASS:S!l3ncE)
+1. Membuka file evidence.pcap di wireshark. Lakukan filter pada kolom yaitu (ftp) (login)
+![creds](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/1.png)
+2. lalu klik kanan -> follow -> TCP stream pada paket no 11074. Dibawah ini packet yang berisi info Login Successful.
+
+3. Didapatkan flag dengan memasukan jawabannya sesuai format yang diminta (USER:h3ngk3rTzy) (PASS:S!l3ncE)
 
 
 ## Malwleowleo
 1. Membuka file evidence.pcap di wireshark. Lakukan filter pada kolom yaitu (TCP)
 2. Lalu membuka paket no 11295 protokol FTP-DATA
+
 3. Terlihat bahwa terdapat file bernama m4L1c10us_W4re.c
+
 4. Didapatkan Flag dengan menjawab pertanyaan pada netcat
 
 
 ## Secret
-1. Membuka file evidence.pcap di wireshark.
-2. Melakukan File -> export objects -> FTP-data -> save all pada paket yang sama dengan Malwleowleo, yaitu paket no 11295 protokol FTP-DATA
-3. Didapatkan pesan rahasia attacker (MIO MIRZA) pada file mirza.jpg
-4. Didapatkan Flag dengan menjawab pertanyaan pada netcat
+1. Membuka file evidence.pcap di wireshark. Melakukan: File -> export objects -> FTP-data -> save all pada paket yang sama dengan Malwleowleo, yaitu paket no 11295 protokol FTP-DATA
+
+2. Didapatkan pesan rahasia attacker (MIO MIRZA) pada file mirza.jpg
+
+3. Didapatkan Flag dengan menjawab pertanyaan pada netcat
 
 ## How Many packets?
 1. Membuka file ftp.pcap di wireshark. Lakukan filter pada kolom yaitu (ftp.request.command == "PASS"). Filter ini menampilkan paket-paket FTP di mana klien mengirimkan kata sandi (perintah PASS) ke server.
+
 2. Setelah itu klik Statistics -> Capture File Properties untuk mengetahui nilai packets yang didapat (934)
+
 3. Didapatkan Flag dengan menjawab pertanyaan pada netcat
 
 ## malwaew
 1. Membuka file capture.pcap di wireshark.
+
 2. Lakukan decrypt TLS untuk melihat seluruh komunikasi data yang ada. Langkah: edit -> preferences -> protocols -> TLS lalu memasukan file keylog.txt
+
 3. Lakukan filter pada kolom yaitu (http). Terdapat 1 file dengan ekstensi .dll yang merupakan executable file dan bisa ditanami malware
+
 4. Download file tersebut dengan melakukan File -> export objects -> HTTP
+
 5. Buka file .dll tersebut di virustotal.com dan mendapatkan SHA-256 (31cf42b2a7c5c558f44cfc67684cc344c17d4946d3a1e0b2cecb8eb58173cb2f)
+
 6. Didapatkan Flag dengan menjawab pertanyaan pada netcat
