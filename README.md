@@ -101,6 +101,8 @@
 3. Didapatkan Flag dengan menjawab pertanyaan pada netcat
 ![How Many packets?](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/12.png)
 
+
+## REVISI
 ## malwaew
 1. Membuka file capture.pcap di wireshark.
 ![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/13.png)
