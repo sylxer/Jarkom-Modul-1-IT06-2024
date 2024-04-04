@@ -72,42 +72,45 @@
 1. Membuka file evidence.pcap di wireshark. Lakukan filter pada kolom yaitu (ftp) (login)
 ![creds](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/1.png)
 2. lalu klik kanan -> follow -> TCP stream pada paket no 11074. Dibawah ini packet yang berisi info Login Successful.
-
+![creds](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/2.png)
 3. Didapatkan flag dengan memasukan jawabannya sesuai format yang diminta (USER:h3ngk3rTzy) (PASS:S!l3ncE)
-
+![creds](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/3.png)
 
 ## Malwleowleo
 1. Membuka file evidence.pcap di wireshark. Lakukan filter pada kolom yaitu (TCP)
 2. Lalu membuka paket no 11295 protokol FTP-DATA
-
+![Malwleowleo](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/4.png)
 3. Terlihat bahwa terdapat file bernama m4L1c10us_W4re.c
-
+![Malwleowleo](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/5.png)
 4. Didapatkan Flag dengan menjawab pertanyaan pada netcat
-
+![Malwleowleo](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/6.png)
 
 ## Secret
 1. Membuka file evidence.pcap di wireshark. Melakukan: File -> export objects -> FTP-data -> save all pada paket yang sama dengan Malwleowleo, yaitu paket no 11295 protokol FTP-DATA
-
+![Secret](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/7.png)
 2. Didapatkan pesan rahasia attacker (MIO MIRZA) pada file mirza.jpg
-
+![Secret](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/8.png)
 3. Didapatkan Flag dengan menjawab pertanyaan pada netcat
+![Secret](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/9.png)
 
 ## How Many packets?
 1. Membuka file ftp.pcap di wireshark. Lakukan filter pada kolom yaitu (ftp.request.command == "PASS"). Filter ini menampilkan paket-paket FTP di mana klien mengirimkan kata sandi (perintah PASS) ke server.
-
+![How Many packets?](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/10.png)
 2. Setelah itu klik Statistics -> Capture File Properties untuk mengetahui nilai packets yang didapat (934)
-
+![How Many packets?](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/11.png)
 3. Didapatkan Flag dengan menjawab pertanyaan pada netcat
+![How Many packets?](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/12.png)
 
 ## malwaew
 1. Membuka file capture.pcap di wireshark.
-
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/13.png)
 2. Lakukan decrypt TLS untuk melihat seluruh komunikasi data yang ada. Langkah: edit -> preferences -> protocols -> TLS lalu memasukan file keylog.txt
-
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/14.png)
 3. Lakukan filter pada kolom yaitu (http). Terdapat 1 file dengan ekstensi .dll yang merupakan executable file dan bisa ditanami malware
-
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/15.png)
 4. Download file tersebut dengan melakukan File -> export objects -> HTTP
-
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/16.png)
 5. Buka file .dll tersebut di virustotal.com dan mendapatkan SHA-256 (31cf42b2a7c5c558f44cfc67684cc344c17d4946d3a1e0b2cecb8eb58173cb2f)
-
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/17.png)
 6. Didapatkan Flag dengan menjawab pertanyaan pada netcat
+![malwaew](https://raw.githubusercontent.com/sylxer/Jarkom-Modul-1-IT06-2024/main/img/18.png)
