@@ -1,4 +1,10 @@
-# Jarkom-Modul-1-IT06-2024
+# Laporan-Resmi-Jarkom-Modul-1-IT06-2024
+
+| Nama                      | NRP                       |
+|---------------------------|---------------------------|
+| Muhammad Harvian Dito S.  | 5027221039                |
+| Sylvia Febrianti          | 5027221019                |
+
 
 ## Fuzz
 
